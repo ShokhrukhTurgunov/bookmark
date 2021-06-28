@@ -1,7 +1,7 @@
 .hero-section{
   display: flex;
   align-items: center;
-  position: relative;
+  margin-bottom: 80px;
 }
 
 .hero-section__title{
@@ -37,20 +37,89 @@
   transition: hover .3s ease;
   &:hover{
     text-decoration: underline;
+    box-shadow: 0px 22px 22px -4px rgba(73, 93, 207, 0.20012);
   }
 }
 
 .hero-section__chrome-link{
   @include link($color-light-blue, $color-white);
+  white-space: nowrap;
 }
 
 .hero-section__firefox-link{
   @include link(#F7F7F7, $color-dark-blue);
+  white-space: nowrap;
 }
 
 
-.hero-section__img{
-  position: absolute;
-  top: -50px;
-  left: 550px;
+
+
+
+@media only screen and (max-width: 1200px) {
+  .hero-section__img{
+    width: 1000px;
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .hero-section__title,
+  .hero-section__text{
+    max-width: 440px;
+  }
+  
+  .hero-section__img{
+    width: 800px;
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .hero-section{
+    flex-direction: column-reverse;
+  }
+
+  .hero-section__img{
+   margin-bottom: 40px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .hero-section__title,
+  .hero-section__text{
+    text-align: center;
+    width: 420px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .hero-section__title{
+    width: 320px;
+    margin-bottom: 14px;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+  .hero-section__text{
+    width: 320px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  @mixin link($backgroundColor, $color) {
+    margin-right: 6px;
+    padding: 5px 10px;
+  }
+
+  .hero-section__chrome-link{
+    @include link($color-light-blue, $color-white);
+  }
+  
+  .hero-section__firefox-link{
+    @include link(#F7F7F7, $color-dark-blue);
+  }
+
+
 }
