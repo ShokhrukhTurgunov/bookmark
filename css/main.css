@@ -605,4 +605,120 @@ img {
 .panels__item--active {
   display: block;
 }
+
+.download-section__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 0;
+  margin-bottom: 149px;
+  padding: 0;
+  list-style: none;
+}
+
+.download-section__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  padding-top: 49px;
+  padding-bottom: 24px;
+  padding-right: 24px;
+  padding-left: 24px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 10px 20px -5px rgba(73, 93, 207, 0.20012);
+          box-shadow: 0px 10px 20px -5px rgba(73, 93, 207, 0.20012);
+  border-radius: 15px;
+  -webkit-transition: -webkit-box-shadow .3s ease;
+  transition: -webkit-box-shadow .3s ease;
+  transition: box-shadow .3s ease;
+  transition: box-shadow .3s ease, -webkit-box-shadow .3s ease;
+}
+
+.download-section__item:hover {
+  -webkit-box-shadow: 0px 25px 35px -5px rgba(73, 93, 207, 0.20012);
+          box-shadow: 0px 25px 35px -5px rgba(73, 93, 207, 0.20012);
+}
+
+.download-section__item:nth-child(2) {
+  margin-top: 40px;
+}
+
+.download-section__item:nth-child(3) {
+  margin-top: 80px;
+}
+
+.download-section__img {
+  margin: 0 auto;
+}
+
+.download-section__text {
+  margin: 0;
+  margin-top: 32px;
+  margin-bottom: 6px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.25px;
+  color: #242A45;
+}
+
+.download-section__span {
+  display: block;
+  margin-bottom: 32px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 28px;
+  text-align: center;
+  color: #242A45;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+.download-section__link {
+  position: relative;
+  display: inline-block;
+  margin-top: 34px;
+  padding: 10px 35px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.25px;
+  color: #fff;
+  text-decoration: none;
+  background-color: #5267DF;
+  -webkit-box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+          box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+  border-radius: 5px;
+  -webkit-transition: background-color .3s ease;
+  transition: background-color .3s ease;
+}
+
+.download-section__link:active {
+  background-color: #0126f8;
+}
+
+.download-section__link::before {
+  content: "";
+  position: absolute;
+  top: -34px;
+  left: -24px;
+  background-image: url("/images/dotted-img.svg");
+  background-repeat: no-repeat;
+  width: 274px;
+  height: 4px;
+}
 /*# sourceMappingURL=main.css.map */
