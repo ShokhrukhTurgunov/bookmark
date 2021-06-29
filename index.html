@@ -181,44 +181,42 @@
       </section>
       
       
-      <section class="questions-section">
-        
-        <h3 class="section-title">Frequently Asked Questions</h3>
-        
-        <p class="section-text">
-          Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email us.
-        </p>
-        
-        
-        <ul class="question-tabs">
-          <li class="question-tabs__item question-tabs__item--active">
-            <a class="question-tabs__link" href="#answer-1">Tab 01</a>
-          </li>
-          <li class="question-tabs__item">
-            <a class="question-tabs__link" href="#answer-2">Tab 02</a>
-          </li>
-          <li class="question-tabs__item">
-            <a class="question-tabs__link" href="#answer-3">Tab 03</a>
-          </li>
-          <li class="question-tabs__item">
-            <a class="question-tabs__link" href="#answer-4">Tab 04</a>
-          </li>
-        </ul>
-        
-        <ul class="answer-panels">
-          <li id="answer-1" class="answer-panels__item answer-panels__item--active">
-            <h2>Panel 1</h2>
-          </li>
-          <li id="answer-2" class="answer-panels__item">
-            <h2>Panel 2</h2>
-          </li>
-          <li id="answer-3" class="answer-panels__item">
-            <h2>Panel 3</h2>
-          </li>
-          <li id="answer-4" class="answer-panels__item">
-            <h2>Panel 4</h2>
-          </li>
-        </ul>
+      <section class="questions">
+
+          <header class="questions__header title">
+            <h2 class="section-title">Frequently asked questions</h2>
+            <p class="section-text">Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email us.</p>
+          </header>
+          <div class="questions__list">
+            <button class="questions__item">What is Bookmark?</button>
+            <div class="questions__toggler">
+              <p class="questions__desc">
+                A bookmark is a saved shortcut that directs your browser to a specific webpage. It stores the title, URL, and favicon of the corresponding page. ... For example, Chrome and Firefox display your bookmarks in an open window, while Safari displays them in a list in the sidebar of the browser window.
+              </p>
+            </div>
+            
+            <button class="questions__item second">How can I request a new browser?</button>
+            <div class="questions__toggler">
+              <p class="questions__desc">
+                Now more simple, secure, and faster than ever - with Google's smarts built in. Automatic protection from security issues like phishing and dangerous sites. Type less with autofill. One browser, all devices. Designed to keep you safe
+              </p>
+            </div>
+            
+            <button class="questions__item third">Is there a mobile app?</button>
+            <div class="questions__toggler">
+              <p class="questions__desc">
+                Social media apps are some of the most popular types of mobile apps available. We build our social networks, and most of us check in with them every day. Facebook alone reports over 1 billion active daily users.
+              </p>
+            </div>
+            
+            <button class="questions__item ">What about other Chromium browsers?</button>
+            <div class="questions__toggler">
+              <p class="questions__desc">
+                Chromium is an free and open-source codebase for a web browser, principally developed and maintained by Google. Google uses the code to make its Chrome browser, which has additional features. The Chromium codebase is widely used.
+              </p>
+            </div>
+            
+          </div>
         
       </section>
       
@@ -228,65 +226,66 @@
     <section class="contact-section">
       
       <span class="contact-section__span">35,000+ ALREADY JOINED</span>
-
+      
       <p class="contact-section__text">Stay up-to-date with what we’re doing</p>
-
+      
       <form class="contact-section__form" method="GET">
-
+        
         <label class="visually-hidden" for="email">Contact section form label</label>
-
+        
         <input class="contact-section__input" id="email" type="email" required placeholder="Enter your email address">
-
+        
         <label class="visually-hidden" for="">Contact section form label</label>
-
+        
         <input class="contact-section__submit" type="submit" value="Contact Us">
-
+        
       </form>
       
     </section>
     
   </main>
-
+  
+  
   <footer class="site-footer">
-
+    
     <div class="container site-footer__container">
-
+      
       <div class="footer-nav">
-
+        
         <img class="footer-nav__img" src="/images/bookmark-site-footer-logo.svg" alt="site-footer-logo" width="150" height="25">
-
+        
         <ul class="footer-nav__list">
-
+          
           <li class="footer-nav__item">
             <a class="footer-nav__link" href="#">FEATURES</a>
           </li>
-
+          
           <li class="footer-nav__item">
             <a class="footer-nav__link" href="#">PRICING</a>
           </li>
-
+          
           <li class="footer-nav__item">
             <a class="footer-nav__link" href="#">CONTACT</a>
           </li>
-
+          
         </ul>
-
+        
       </div>
-
+      
       <div class="socials">
-
+        
         <a class="socials__link" href="#" target="_blank">
           <img class="socials__img" src="/images/facebook-icon.svg" alt="facebook-image" width="24" height="24">
         </a>
-
+        
         <a class="socials__link" href="#" target="_blank">
           <img class="socials__img" src="/images/twitter-icon.svg" alt="twitter-image" width="24" height="24">
         </a>
-
+        
       </div>
-
+      
     </div>
-
+    
   </footer>
   
   <script src="/js/main.js"></script>

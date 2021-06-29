@@ -92,3 +92,12 @@
   width: 274px;
   height: 4px;
 }
+
+@media only screen and (max-width: 900px) {
+  .download-section__list {
+    max-width: 300px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    flex-direction: column;
+  }
+}

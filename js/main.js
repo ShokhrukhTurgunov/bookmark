@@ -28,31 +28,17 @@ elsTabsLink.forEach(function (link) {
 });
 
 
-var elsQuestionTabsItem = document.querySelectorAll('.question-tabs__item');
-var elsQuestionTabsLink = document.querySelectorAll('.question-tabs__link');
-var elsAnswerPanel = document.querySelectorAll('.answer-panels__item');
+var acc = document.getElementsByClassName("questions__item");
+var i;
 
-// Har bir link clickga quloq solsin. Har biriga link deb murojaat qilamiz. O'zimiz nom beramiz
-elsQuestionTabsLink.forEach(function (link) {
-  // Har bir linkka click reaksiyasini beramiz
-  link.addEventListener('click', function (evt) {
-    // Linkning tabiiy reaksiyasi (sakrash)ning oldi olinadi
-    evt.preventDefault();
-    
-    // Hamma li lardan active klassni olib tashlaymiz. Har biriga item deb murojaat qilamiz
-    elsQuestionTabsItem.forEach(function (item) {
-      item.classList.remove('question-tabs__item--active');
-    });
-    
-    // Bosilgan linkning otasiga active klassini qo'shamiz
-    link.parentElement.classList.add('question-tabs__item--active');
-    
-    // Hamma panellarni yopamiz
-    elsAnswerPanel.forEach(function (panel) {
-      panel.classList.remove('answer-panels__item--active');
-    });
-    
-    // Bog'langan panelni topamiz
-    document.querySelector(link.getAttribute('href')).classList.add('answer-panels__item--active');
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
   });
-});
+}
