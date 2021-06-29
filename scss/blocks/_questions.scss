@@ -1,0 +1,12 @@
+.question-tabs__item--active .tabs__link {
+  background-color: dodgerblue;
+  color: #fff;
+}
+
+.answer-panels__item {
+  display: none;
+}
+
+.answer-panels__item--active {
+  display: block;
+}
