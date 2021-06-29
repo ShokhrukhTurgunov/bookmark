@@ -490,7 +490,7 @@ img {
   }
 }
 
-.features-section__title {
+.section-title {
   margin: 0;
   margin-bottom: 16px;
   font-weight: 500;
@@ -501,7 +501,7 @@ img {
   color: #242A45;
 }
 
-.features-section__text {
+.section-text {
   max-width: 540px;
   margin: 0 auto;
   margin-bottom: 72px;
@@ -538,7 +538,7 @@ img {
 
 .panels {
   margin: 0;
-  margin-bottom: 295px;
+  margin-bottom: 400px;
 }
 
 .panels__text-box {
