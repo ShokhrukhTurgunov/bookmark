@@ -1,0 +1,54 @@
+.contact-section{
+  padding-top: 58px;
+  padding-bottom: 74px;
+  background-color: $color-light-blue;
+}
+
+.contact-section__span{
+  display: block;
+  margin-bottom: 24px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: 5px;
+  color: $color-white;
+}
+
+.contact-section__text{
+  max-width: 408px;
+  margin: 0 auto;
+  margin-bottom: 36px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: -0.1px;
+  color: $color-white;
+}
+
+.contact-section__form{
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.contact-section__input{
+  width: 300px;
+  padding: 10px 20px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.contact-section__submit{
+  width: 126px;
+  margin-left: 16px;
+  padding: 11px 24px;
+  border: none;
+  outline: none;
+  color: $color-white;
+  background-color: $color-light-coral;
+  box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+  border-radius: 5px;
+  cursor: pointer;
+}
