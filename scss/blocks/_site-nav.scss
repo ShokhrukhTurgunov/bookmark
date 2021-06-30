@@ -90,25 +90,32 @@
   .nav-button{
     padding: 8px 8px;
   }
+}
+
+@media only screen and (max-width: 550px) {
+  .nav-container{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
   
-  @media only screen and (max-width: 550px) {
-    .nav-container{
-      padding-left: 10px;
-      padding-right: 10px;
-    }
-    
-    .nav-item__link{
-      letter-spacing: 0;
-    }
-    
-    .nav-item:not(:last-child){
-      margin-right: 5px;
-    }
-    
-    .nav-button{
-      font-size: 12px;
-      line-height: 14px;
-      letter-spacing: 0;
-    }
+  .nav-item__link{
+    letter-spacing: 0;
+  }
+  
+  .nav-item:not(:last-child){
+    margin-right: 5px;
+  }
+  
+  .nav-button{
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0;
   }
 }
+
+@media only screen and (max-width: 375px) {
+  .nav-list{
+    display: none;
+  }
+}
+

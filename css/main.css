@@ -336,7 +336,7 @@ img {
   }
 }
 
-@media only screen and (max-width: 550px) and (max-width: 550px) {
+@media only screen and (max-width: 550px) {
   .nav-container {
     padding-left: 10px;
     padding-right: 10px;
@@ -351,6 +351,12 @@ img {
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .nav-list {
+    display: none;
   }
 }
 
@@ -932,6 +938,9 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
