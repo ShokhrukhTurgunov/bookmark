@@ -35,9 +35,11 @@
   
   <main class="site-main">
     
-    <div class="container">
+    
+    
+    <section class="hero-section">  <!-- HERO SECTION -->
       
-      <section class="hero-section">  <!-- HERO SECTION -->
+      <div class="container">
         
         <div class="hero-section__left">
           
@@ -54,11 +56,13 @@
           
         </div>
         
-        <img class="hero-section__img" src="/images/site-hero-desktop-right-bg.png" alt="bookmark-manager-image" width="1155" height="496">
-        
-      </section>
+      </div>
       
-      <section class="features-section">  <!-- FEATURES SECTION -->
+    </section>
+    
+    <section class="features-section">  <!-- FEATURES SECTION -->
+      
+      <div class="container">
         
         <h3 class="features-section__title section-title">Features</h3>
         
@@ -79,10 +83,13 @@
           </li>
         </ul>
         
-        <ul class="panels">
-          <li id="panel-1" class="panels__item panels__item--active">
-            
-            <img class="panels__img" src="/images/features-slide-first-bg.png" alt="bookmark-image" width="965" height="400">
+      </div>
+      
+      <ul class="panels">
+        
+        
+        <li id="panel-1" class="panels__item panels__item--active">
+          <div class="container">
             
             <div class="panels__text-box">
               <h3 class="panels__title">Bookmark in one click</h3>
@@ -94,10 +101,11 @@
               <a class="panels__link" href="#">More Info</a>
             </div>
             
-          </li>
-          <li id="panel-2" class="panels__item">
-            
-            <img class="panels__img" src="/images/features-slide-second-bg.png" alt="bookmark-image" width="965" height="400">
+          </div>
+          
+        </li>
+        <li id="panel-2" class="panels__item search-item">
+          <div class="container">
             
             <div class="panels__text-box">
               <h3 class="panels__title">Intelligent search</h3>
@@ -109,10 +117,10 @@
               <a class="panels__link" href="#">More Info</a>
             </div>
             
-          </li>
-          <li id="panel-3" class="panels__item">
-            
-            <img class="panels__img" src="/images/features-slide-third-bg.png" alt="bookmark-image" width="965" height="350">
+          </div>
+        </li>
+        <li id="panel-3" class="panels__item share-item">
+          <div class="container">
             
             <div class="panels__text-box">
               <h3 class="panels__title">Share your bookmarks</h3>
@@ -124,12 +132,15 @@
               <a class="panels__link" href="#">More Info</a>
             </div>
             
-          </li>
-        </ul>
+          </div>
+        </li>
         
-      </section>
+      </ul>
       
-      
+    </section>
+    
+    
+    <div class="container">
       <section class="download-section">
         
         <h3 class="section-title">Download the extension</h3>
@@ -182,67 +193,66 @@
       
       
       <section class="questions">
-
-          <header class="questions__header title">
-            <h2 class="section-title">Frequently asked questions</h2>
-            <p class="section-text">Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email us.</p>
-          </header>
-          <div class="questions__list">
-            <button class="questions__item">What is Bookmark?</button>
-            <div class="questions__toggler">
-              <p class="questions__desc">
-                A bookmark is a saved shortcut that directs your browser to a specific webpage. It stores the title, URL, and favicon of the corresponding page. ... For example, Chrome and Firefox display your bookmarks in an open window, while Safari displays them in a list in the sidebar of the browser window.
-              </p>
-            </div>
-            
-            <button class="questions__item second">How can I request a new browser?</button>
-            <div class="questions__toggler">
-              <p class="questions__desc">
-                Now more simple, secure, and faster than ever - with Google's smarts built in. Automatic protection from security issues like phishing and dangerous sites. Type less with autofill. One browser, all devices. Designed to keep you safe
-              </p>
-            </div>
-            
-            <button class="questions__item third">Is there a mobile app?</button>
-            <div class="questions__toggler">
-              <p class="questions__desc">
-                Social media apps are some of the most popular types of mobile apps available. We build our social networks, and most of us check in with them every day. Facebook alone reports over 1 billion active daily users.
-              </p>
-            </div>
-            
-            <button class="questions__item ">What about other Chromium browsers?</button>
-            <div class="questions__toggler">
-              <p class="questions__desc">
-                Chromium is an free and open-source codebase for a web browser, principally developed and maintained by Google. Google uses the code to make its Chrome browser, which has additional features. The Chromium codebase is widely used.
-              </p>
-            </div>
-            
+        
+        <header class="questions__header title">
+          <h2 class="section-title">Frequently asked questions</h2>
+          <p class="section-text">Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email us.</p>
+        </header>
+        <div class="questions__list">
+          <button class="questions__item">What is Bookmark?</button>
+          <div class="questions__toggler">
+            <p class="questions__desc">
+              A bookmark is a saved shortcut that directs your browser to a specific webpage. It stores the title, URL, and favicon of the corresponding page. ... For example, Chrome and Firefox display your bookmarks in an open window, while Safari displays them in a list in the sidebar of the browser window.
+            </p>
           </div>
+          
+          <button class="questions__item second">How can I request a new browser?</button>
+          <div class="questions__toggler">
+            <p class="questions__desc">
+              Now more simple, secure, and faster than ever - with Google's smarts built in. Automatic protection from security issues like phishing and dangerous sites. Type less with autofill. One browser, all devices. Designed to keep you safe
+            </p>
+          </div>
+          
+          <button class="questions__item third">Is there a mobile app?</button>
+          <div class="questions__toggler">
+            <p class="questions__desc">
+              Social media apps are some of the most popular types of mobile apps available. We build our social networks, and most of us check in with them every day. Facebook alone reports over 1 billion active daily users.
+            </p>
+          </div>
+          
+          <button class="questions__item ">What about other Chromium browsers?</button>
+          <div class="questions__toggler">
+            <p class="questions__desc">
+              Chromium is an free and open-source codebase for a web browser, principally developed and maintained by Google. Google uses the code to make its Chrome browser, which has additional features. The Chromium codebase is widely used.
+            </p>
+          </div>
+          
+        </div>
         
       </section>
-      
     </div>
     
-    
     <section class="contact-section">
-      
-      <span class="contact-section__span">35,000+ ALREADY JOINED</span>
-      
-      <p class="contact-section__text">Stay up-to-date with what we’re doing</p>
-      
-      <form class="contact-section__form" method="GET">
+      <div class="container">
         
-        <label class="visually-hidden" for="email">Contact section form label</label>
+        <span class="contact-section__span">35,000+ ALREADY JOINED</span>
         
-        <input class="contact-section__input" id="email" type="email" required placeholder="Enter your email address">
+        <p class="contact-section__text">Stay up-to-date with what we’re doing</p>
         
-        <label class="visually-hidden" for="">Contact section form label</label>
+        <form class="contact-section__form" method="GET">
+          
+          <label class="visually-hidden" for="email">Contact section form label</label>
+          
+          <input class="contact-section__input" id="email" type="email" required placeholder="Enter your email address">
+          
+          <label class="visually-hidden" for="">Contact section form label</label>
+          
+          <input class="contact-section__submit" type="submit" value="Contact Us">
+          
+        </form>
         
-        <input class="contact-section__submit" type="submit" value="Contact Us">
-        
-      </form>
-      
+      </div>
     </section>
-    
   </main>
   
   

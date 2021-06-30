@@ -1,7 +1,13 @@
 .hero-section{
   display: flex;
   align-items: center;
+  padding-top: 70px;
+  padding-bottom: 100px;
   margin-bottom: 80px;
+  background-image: url("/images/site-hero-desktop-right-bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: calc(50% + 550px) center;
 }
 
 .hero-section__title{
@@ -51,14 +57,10 @@
   white-space: nowrap;
 }
 
-
-
-
-
-@media only screen and (max-width: 1200px) {
-  .hero-section__img{
-    width: 1000px;
-    height: 400px;
+@media only screen and (max-width: 1150px) {
+  .hero-section{
+    background-size: 900px 350px;
+    background-position: calc(50% + 450px) center;
   }
 }
 
@@ -67,20 +69,57 @@
   .hero-section__text{
     max-width: 440px;
   }
-  
-  .hero-section__img{
-    width: 800px;
-    height: 400px;
-  }
 }
 
 @media only screen and (max-width: 900px) {
   .hero-section{
-    flex-direction: column-reverse;
+    background-size: 800px 350px;
+    background-position: calc(50% + 400px) center;
+  }
+}
+
+@media only screen and (max-width: 840px) {
+  .hero-section{
+    background-size: 750px 300px;
+    background-position: calc(50% + 400px) center;
   }
 
-  .hero-section__img{
-   margin-bottom: 40px;
+  .hero-section__title{
+    margin-bottom: 18px;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: -0.15px;
+  }
+}
+
+@media only screen and (max-width: 840px) {
+  .hero-section{
+    padding-top: 350px;
+    background-size: 750px 300px;
+    background-position: calc(50% + 50px) calc(50% - 180px);
+  }
+
+  .hero-section__title,
+  .hero-section__text{
+    margin: 0 auto;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .hero-section__link-box{
+    margin-left: 200px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .hero-section__link-box{
+    margin-left: 150px;
+  }
+}
+
+@media only screen and (max-width: 610px) {
+  .hero-section__link-box{
+    margin-left: 90px;
   }
 }
 
@@ -120,6 +159,4 @@
   .hero-section__firefox-link{
     @include link(#F7F7F7, $color-dark-blue);
   }
-
-
 }
