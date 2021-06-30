@@ -26,6 +26,7 @@
   justify-content: center;
   list-style: none;
   margin-bottom: 92px;
+  white-space: nowrap;
 }
 
 .tabs__link{
@@ -38,6 +39,7 @@
   letter-spacing: 0.533333px;
   color: $color-dark-blue;
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .panels{
@@ -222,6 +224,7 @@
   }
 
   .panels__item{
+    background-size: 590px 200px;
     background-position: calc(50%) calc(50% - 100px);
   }
 
@@ -234,5 +237,23 @@
     margin: 0 auto;
     padding-top: 240px;
     padding-left: 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .tabs{
+    flex-direction: column;
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+  .tabs__item{
+    margin: 0 auto;
+    margin-bottom: 12px;
+  }
+
+  .tabs__link{
+    display: inline-block;
   }
 }

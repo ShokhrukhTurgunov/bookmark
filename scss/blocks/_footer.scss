@@ -47,3 +47,35 @@
   display: inline-block;
   margin-right: 40px;
 }
+
+@media only screen and (max-width: 710px) {
+  .footer-nav__item{
+    margin-left: 30px;
+  }
+
+  .socials__link:first-child{
+    margin-right: 25px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .site-footer__container{
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .footer-nav{
+    flex-direction: column;
+  }
+
+  .footer-nav__list{
+    flex-direction: column;
+    margin-top: 16px;
+  }
+
+  .footer-nav__item{
+    margin: 0;
+    margin-bottom: 16px;
+  }
+}

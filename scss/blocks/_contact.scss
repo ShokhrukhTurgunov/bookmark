@@ -52,3 +52,22 @@
   border-radius: 5px;
   cursor: pointer;
 }
+
+
+@media only screen and (max-width: 510px) {
+  .contact-section__form{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-section__input{
+    width: 350px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .contact-section__submit{
+    width: 350px;
+    margin: 0 auto;
+  }
+}
