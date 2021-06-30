@@ -256,4 +256,12 @@
   .tabs__link{
     display: inline-block;
   }
+
+  .panels__item{
+    background-position: calc(50% - 120px) calc(50% - 100px);
+  }
+
+  .share-item {
+    background-position: calc(50% - 40px) calc(50% - 100px);
+  }
 }
