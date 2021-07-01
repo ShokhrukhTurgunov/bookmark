@@ -1,3 +1,15 @@
+var elSiteHeader = document.querySelector('.site-header');
+if(elSiteHeader) {
+  var elSiteHeaderMenuToggler = elSiteHeader.querySelector('.site-nav-toggler');
+}
+if(elSiteHeaderMenuToggler) {
+  elSiteHeaderMenuToggler.addEventListener('click', function() {
+    elSiteHeader.classList.toggle('site-header-open')
+  });
+}
+
+
+
 var elsTabsItem = document.querySelectorAll('.tabs__item');
 var elsTabsLink = document.querySelectorAll('.tabs__link');
 var elsPanel = document.querySelectorAll('.panels__item');
