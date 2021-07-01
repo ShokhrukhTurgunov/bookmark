@@ -1,10 +1,32 @@
+.site-nav-container{
+  display: flex;
+  align-items: center;
+  margin-bottom: 70px;
+  padding-top: 48px;
+}
+
+.site-logo-link{
+  flex-shrink: 0;
+  margin-right: auto;
+}
+
+.site-logo-second-link{
+  display: none;
+}
+
+.site-nav-toggler{
+  display: none;
+}
+
 .site-logo-img{
   display: block;
 }
 
+.site-header__wrapper{
+  display: none;
+}
+
 .site-nav{
-  padding-top: 48px;
-  margin-bottom: 70px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -107,15 +129,111 @@
   }
   
   .nav-button{
+    padding: 6px 2px;
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0;
   }
 }
 
-@media only screen and (max-width: 375px) {
-  .nav-list{
+
+@media only screen and (max-width: 380px) {
+  .site-nav{
     display: none;
+  }
+
+  .site-header-open{
+    z-index: 99;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    opacity: 0.95;
+    background-color: $color-dark-blue;
+  }
+
+  .site-logo-link{
+    display: block;
+  }
+
+  .site-logo__image{
+    display: block;
+  }
+
+  .site-header-open .site-logo-link{
+    display: none;
+  }
+
+  .site-header-open .site-nav-toggler{
+    background-image: url("/images/site-header-toggler--close.svg");
+  }
+
+  .site-nav-toggler{
+    position: absolute;
+    right: 32px;
+    top: 12%;
+    display: block;
+    width: 18px;
+    height: 15px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    background-image: url("/images/site-header-toggler--hamburger.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    
+  }
+
+  .site-logo-second-link{
+    display: block;
+  }
+
+  .site-header-open .site-nav{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 66px);
+    left: 0;
+    top: 106px;
+  }
+
+  .site-header-open .header-socials{
+    display: block;
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 40%;
+  }
+
+  .nav-list{
+    width: 310px;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  
+  .nav-item{
+    width: 100%;
+    padding: 24px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  .nav-item:last-child{
+    margin-bottom: 24px;
+  }
+
+  .nav-item__link{
+    display: block;
+    color: $color-white;
+    text-align: center;
+  }
+
+  .nav-button{
+    width: 100%;
+    padding: 16px 0;
+    display: block;
+    border: 2px solid $color-white;
+    background-color: transparent;
   }
 }
 
