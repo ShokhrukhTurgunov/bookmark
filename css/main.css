@@ -248,7 +248,6 @@ img {
 .site-logo-link {
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  margin-right: auto;
 }
 
 .site-logo-second-link {
@@ -419,7 +418,7 @@ img {
   .site-nav-toggler {
     position: absolute;
     right: 32px;
-    top: 8%;
+    top: 7%;
     display: block;
     width: 18px;
     height: 15px;
@@ -445,7 +444,7 @@ img {
   .site-header-open .header-socials {
     display: block;
     position: absolute;
-    margin-top: 120px;
+    margin-top: 160px;
     margin-left: 40%;
   }
   .nav-list {
