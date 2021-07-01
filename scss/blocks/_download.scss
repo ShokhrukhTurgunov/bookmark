@@ -20,9 +20,6 @@
   box-shadow: 0px 10px 20px -5px rgba(73, 93, 207, 0.20012);
   border-radius: 15px;
   transition: box-shadow .3s ease;
-  &:hover {
-    box-shadow: 0px 25px 35px -5px rgba(73, 93, 207, 0.20012);
-  }
 }
 
 .download-section__item:nth-child(2){
@@ -75,8 +72,15 @@
   text-decoration: none;
   background-color: $color-light-blue;
   box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+  border: 2px solid transparent;
   border-radius: 5px;
   transition: background-color .3s ease;
+  &:hover {
+    border: 2px solid $color-light-blue;
+    box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+    color: $color-light-blue;
+    background-color: transparent;
+  }
   &:active{
     background-color: #0126f8;;
   }

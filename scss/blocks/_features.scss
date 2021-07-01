@@ -40,6 +40,10 @@
   color: $color-dark-blue;
   text-decoration: none;
   white-space: nowrap;
+  transform: color .3s ease;
+  &:hover{
+    color: $color-light-coral;
+  }
 }
 
 .panels{

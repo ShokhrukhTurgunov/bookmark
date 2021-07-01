@@ -22,6 +22,9 @@
   font-size: 18px;
   line-height: 32px;
   transition: 0.4s;
+  &:hover{
+    color: $color-light-coral;
+  }
 }
 
 .active.questions__item::after {

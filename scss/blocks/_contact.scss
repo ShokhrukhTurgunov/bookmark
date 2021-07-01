@@ -49,8 +49,15 @@
   color: $color-white;
   background-color: $color-light-coral;
   box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+  border: 2px solid transparent;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color .3s ease;
+  &:hover{
+    border: 2px solid $color-light-coral;
+    color: $color-light-coral;
+    background-color: $color-white;
+  }
 }
 
 
