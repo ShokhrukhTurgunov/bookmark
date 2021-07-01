@@ -1,6 +1,7 @@
 .site-nav-container{
   display: flex;
   align-items: center;
+  justify-content: space-between;
   margin-bottom: 70px;
   padding-top: 48px;
 }
@@ -12,6 +13,10 @@
 
 .site-logo-second-link{
   display: none;
+}
+
+.header-socials{
+  display: none;  
 }
 
 .site-nav-toggler{
@@ -119,6 +124,10 @@
     padding-left: 10px;
     padding-right: 10px;
   }
+
+  .nav-list{
+    margin-left: auto;
+  }
   
   .nav-item__link{
     letter-spacing: 0;
@@ -137,7 +146,7 @@
 }
 
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 475px) {
   .site-nav{
     display: none;
   }
