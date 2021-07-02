@@ -40,6 +40,7 @@ elsTabsLink.forEach(function (link) {
 });
 
 
+
 var acc = document.getElementsByClassName("questions__item");
 var i;
 
